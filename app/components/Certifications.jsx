@@ -17,6 +17,13 @@ const certificationData = [
     imageUrl: "/certificates/Om_DSA_java.png",
   },
   {
+    title: "Software Engineering Job Simulation",
+    issuer: "J. P. Morgan Chase & Co.",
+    date: "Issued Sept 2025",
+    description: "Gained practical experience with the software development lifecycle by completing tasks simulating a real-world software engineering workflow at J.P. Morgan.",
+    imageUrl: "/certificates/Om_JPMC_JobSimulationCert.png",
+  },
+  {
     title: "Computational Theory: Language Principle & Finite Automata",
     issuer: "Infosys Springboard",
     date: "Issued Oct 2024",
