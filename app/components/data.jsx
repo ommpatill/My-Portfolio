@@ -43,18 +43,5 @@ export const projectsData = [
       "Implemented secure user authentication and data encryption.",
     ],
   },
-  {
-    title: "Sales Person Territory Planner",
-    description:
-      "A robust web application to optimize sales territories, enabling data-driven strategic planning for businesses.",
-    tags: ["Java", "Spring Boot", "ReactJS", "SQL"],
-    imageUrl: "/images/sales-planner.png",
-    githubUrl: "https://github.com",
-    date: "November 2022 - February 2023",
-    contributions: [
-      "Designed scalable backend services using Java & Spring Boot, cutting query times by 50%.",
-      "Owned the full development lifecycle using Agile, accelerating project delivery by 20%.",
-      "Implemented real-time data visualization dashboards for sales trends.",
-    ],
-  },
+  
 ];
