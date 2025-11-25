@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import { ExternalLink } from "lucide-react";
 
 export default function Project({
   title,
@@ -12,6 +13,7 @@ export default function Project({
   githubUrl,
   date,
   contributions,
+  productionUrl,
 }) {
   return (
     <div className="w-full max-w-5xl mx-auto">
@@ -36,7 +38,7 @@ export default function Project({
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white md:text-2xl">
                 {title}
               </h3>
-              <a
+              {/* <a
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -44,10 +46,37 @@ export default function Project({
                 aria-label="View on GitHub"
               >
                 <FaGithub size={24} />
-              </a>
+              </a> */}
+              <div className="mt-3 flex flex-wrap items-center gap-3">
+                {githubUrl && (
+                  <a
+                    href={githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-gray-200 hover:text-white"
+                  >
+                    <FaGithub size={16} />
+                    GitHub
+                  </a>
+                )}
+
+                {productionUrl && (
+                  <a
+                    href={productionUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-blue-400 hover:text-blue-300"
+                  >
+                    Live Demo
+                    <ExternalLink size={16} />
+                  </a>
+                )}
+              </div>
             </div>
-            <p className="mt-1 text-xs text-gray-600 dark:text-white/60 md:text-sm">{date}</p>
-            
+            <p className="mt-1 text-xs text-gray-600 dark:text-white/60 md:text-sm">
+              {date}
+            </p>
+
             <p className="mt-3 leading-relaxed text-gray-700 dark:text-white/80 text-sm md:block">
               {description}
             </p>
@@ -63,7 +92,7 @@ export default function Project({
               </ul>
             </div>
           </div>
-          
+
           <ul className="flex flex-wrap mt-4 gap-2 md:mt-6">
             {(tags || []).map((tag, i) => (
               <li

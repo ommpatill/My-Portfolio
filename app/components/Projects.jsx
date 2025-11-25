@@ -8,6 +8,7 @@ import { assets } from "../../assets/assets";
 import { projectsData } from "./data";
 import Project from "./Project";
 import SectionHeading from "./SectionHeading";
+
   
 export default function Projects({ limit }) {
   const { isDarkMode } = useTheme();

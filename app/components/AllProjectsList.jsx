@@ -1,15 +1,14 @@
 "use client";
 
 import React from "react";
-// Change 1: Import 'projectsData' to match the export from your data file.
-import { projectsData } from "./data"; 
+import { projectsData } from "./data";
 import ProjectCard from "./ProjectCard";
 
 export default function AllProjectsList({ isStandalonePage = false }) {
   return (
     <section
       id="projects"
-      className={`w-full max-w-7xl mx-auto ${!isStandalonePage ? 'pt-16' : ''}`}
+      className={`w-full max-w-7xl mx-auto ${!isStandalonePage ? "pt-16" : ""}`}
     >
       <div className="text-center mb-12">
         <h1 className="text-4xl sm:text-5xl font-bold font-Ovo text-gray-900 dark:text-white">
@@ -21,18 +20,16 @@ export default function AllProjectsList({ isStandalonePage = false }) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Change 2: Map over the correctly imported 'projectsData' array. */}
-        {projectsData.map((project, index) => (
+        {projectsData.map((project) => (
           <ProjectCard
-            key={index} // Using index as a key since there's no id
+            key={project.title}
             title={project.title}
             date={project.date}
-            description={project.description}
             contributions={project.contributions}
-            technologies={project.tags} // Using 'tags' from your data file
+            tags={project.tags}                // 👈 correct prop name
             imageUrl={project.imageUrl}
             githubUrl={project.githubUrl}
-            liveUrl={project.liveUrl}
+            productionUrl={project.productionUrl} // 👈 hosted URL here
           />
         ))}
       </div>
