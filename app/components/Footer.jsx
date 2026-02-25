@@ -33,7 +33,10 @@ const Footer = () => {
 
       <div className="flex flex-col sm:flex-row items-center justify-between border-t border-gray-200 dark:border-gray-700 mx-auto max-w-6xl py-6">
         <p className="order-2 sm:order-1 text-sm sm:text-base mt-6 sm:mt-0">
-          © 2025 Om Patil. All rights reserved.
+          © 2026 Om Patil. All rights reserved.
+        </p>
+        <p className="order-2 sm:order-1 text-sm sm:text-base mt-6 sm:mt-0">
+          Updated: February, 2026
         </p>
         
         <ul className="flex items-center gap-6 order-1 sm:order-2">
