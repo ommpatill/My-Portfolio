@@ -142,11 +142,7 @@ const Header = () => {
             variants={buttonVariants}
             className="flex flex-row items-center justify-center lg:justify-start gap-4 mt-6 lg:mt-8"
           >
-            <a href="#contact" className="px-8 py-3 w-auto justify-center rounded-full text-white font-semibold bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2">
-              Contact Me
-              <span>&rarr;</span>
-            </a>
-            <a
+             <a
               href="/OmPatil_Resume.pdf"
               download
               className="px-8 py-3 w-auto justify-center rounded-full font-semibold 
@@ -157,6 +153,12 @@ const Header = () => {
               My Resume
               <Image src={assets.download_icon} alt="" className="w-4 invert" />
             </a>
+            
+            <a href="#contact" className="px-8 py-3 w-auto justify-center rounded-full text-white font-semibold bg-gradient-to-r from-purple-600 to-pink-500 hover:opacity-90 transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center gap-2">
+              Contact Me
+              <span>&rarr;</span>
+            </a>
+           
           </motion.div>
         </div>
       </motion.div>

@@ -55,7 +55,7 @@ const Academic = () => {
       degree: "Bachelor of Technology in Information Technology",
       duration: "August 2023 - June 2026 (Expected)",
       location: "Pune, India",
-      grade: "CGPA: 7.79",
+      grade: "CGPA: 8.19",
     },
     {
       institution: "DBATU's Institute of Petrochemical Engineering",

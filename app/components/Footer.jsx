@@ -36,7 +36,7 @@ const Footer = () => {
           © 2026 Om Patil. All rights reserved.
         </p>
         <p className="order-2 sm:order-1 text-sm sm:text-base mt-6 sm:mt-0">
-          Updated: February, 2026
+          Updated: May, 2026
         </p>
         
         <ul className="flex items-center gap-6 order-1 sm:order-2">
